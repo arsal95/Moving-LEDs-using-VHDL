@@ -8,3 +8,5 @@ The user defines the pattern by toggling any of the switches numbered from 0 to 
 ## Algorithm Description:
 
 ### Library:
+* Using the “use” statement, all components of the package “STD_LOGIC_1164” part of library IEEE are visible for later use in the VHDL code. “Library” statement is included above the “use” statement so that compiler would know that “IEEE” is a library.
+* VHDL datatype “STD_LOGIC” and rising_edge () is declared in IEEE.STD_LOGIC_1164.
