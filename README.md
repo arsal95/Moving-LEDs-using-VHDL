@@ -10,3 +10,17 @@ The user defines the pattern by toggling any of the switches numbered from 0 to 
 ### Library:
 * Using the “use” statement, all components of the package “STD_LOGIC_1164” part of library IEEE are visible for later use in the VHDL code. “Library” statement is included above the “use” statement so that compiler would know that “IEEE” is a library.
 * VHDL datatype “STD_LOGIC” and rising_edge () is declared in IEEE.STD_LOGIC_1164.
+
+### Entity:
+Entity declaration represents the external interface to the design entity. Entity statement declares the design name; here it is “movelight”. This interface consists of the following input and output ports:
+
+**System Inputs:**
+
+* clk - system clock signal
+* switches - 8 slide switches [will be a std_logic_vector (7 downto 0)]
+* btnd - pushbutton (down): Load a new pattern from the switches
+* btnl - pushbutton (left): rotate to the left
+* btnc - pushbutton (center): stop rotation
+* btnr - pushbutton (right): rotate to the right
+
+**System Output:**
