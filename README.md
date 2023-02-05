@@ -24,3 +24,7 @@ Entity declaration represents the external interface to the design entity. Entit
 * btnr - pushbutton (right): rotate to the right
 
 **System Output:**
+
+* leds - 8 leds [will be a std_logic_vector (7 downto 0)]
+
+  ## Architecture:
