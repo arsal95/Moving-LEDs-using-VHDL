@@ -36,7 +36,6 @@ Entity declaration represents the external interface to the design entity. Entit
 * In the process “count_p” the objective is to generate a repeating pulse named r_pulse, this is done to set the speed of the rotating LEDs. The process count_p is defined such that it sets a HIGH bit for r_pulse for after every 3 clock cycles and the HIGH BIT lasts 1 clock cycle.
 * In the process “mvlogic” on every clock cycle, three conditions check the state of btnl, btnr and btnc, if btnl == 1 then mv_left == 1, if btnr = 1 then mv_right = 1, if btnc is pressed then both mv_left and mv_left are assigned 0.
 * The process “lr_rot” is defined to implement the left and right rotation.
-
 Left Rotation: The led register is assigned by concatenating bits from 6 to 0 and MSB bit 7. So, at each iteration due to this assignment provided that mv_left = ‘1’, the pattern is rotated to the left direction.
 
 <p align="center"><b>led_reg <= led_reg(6 downto 0) & led_reg(7);<b></p>
