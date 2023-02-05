@@ -45,4 +45,4 @@ Entity declaration represents the external interface to the design entity. Entit
   
 <p align="center"><b>led_reg <= led_reg(0) & led_reg(7 downto 1);<b></p>
   
-## Simulation Results:
+## Simulation Result:
