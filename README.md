@@ -44,3 +44,5 @@ Entity declaration represents the external interface to the design entity. Entit
 **Right Rotation:** The led register is assigned by concatenating LSB bit 0 and bits 7 to 1. So, at each iteration due to this assignment provided that mv_right = ‘1’, the pattern is rotated to the right direction.
   
 <p align="center"><b>led_reg <= led_reg(0) & led_reg(7 downto 1);<b></p>
+  
+## Simulation Results:
