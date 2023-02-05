@@ -15,7 +15,6 @@ The user defines the pattern by toggling any of the switches numbered from 0 to 
 Entity declaration represents the external interface to the design entity. Entity statement declares the design name; here it is “movelight”. This interface consists of the following input and output ports:
 
 **System Inputs:**
-
 * clk - system clock signal
 * switches - 8 slide switches [will be a std_logic_vector (7 downto 0)]
 * btnd - pushbutton (down): Load a new pattern from the switches
@@ -24,7 +23,16 @@ Entity declaration represents the external interface to the design entity. Entit
 * btnr - pushbutton (right): rotate to the right
 
 **System Output:**
-
 * leds - 8 leds [will be a std_logic_vector (7 downto 0)]
 
-  ## Architecture:
+## Architecture:
+* Architecture is a description of the inner design operation.
+* The Architecture “Behavioral” is assigned to the entity “movelight” using the keyword “of”, such that the port definitions are visible to the architecture.
+* Constant named “Max_count” is defined and assigned a value of 3 ”, sub_type of integer named “Count_type” is defined and assigned a range of “0 to Max_count-1”.
+* Max_count is used to define the speed of the r_pulse.
+* 3 signals named mv_left, mv_right, and r_pulse are defined of the type standard logic, Signal led_reg is defined as a standard logic vector with 8 bits. Signal led_reg acts as a memory device (register) to load the pattern from the switches when the appropriate button is pressed (btnd) and outputted to the LEDs.
+* Furthermore, 3 processes named count_p, mvlogic, and lr_rot are defined.
+* All processes take (clk) as a sensitivity list because all processes are time-dependent there is a need that all processes to be synchronized.
+* In the process “count_p” the objective is to generate a repeating pulse named r_pulse, this is done to set the speed of the rotating LEDs. The process count_p is defined such that it sets a HIGH bit for r_pulse for after every 3 clock cycles and the HIGH BIT lasts 1 clock cycle.
+* In the process “mvlogic” on every clock cycle, three conditions check the state of btnl, btnr and btnc, if btnl == 1 then mv_left == 1, if btnr = 1 then mv_right = 1, if btnc is pressed then both mv_left and mv_left are assigned 0.
+* The process “lr_rot” is defined to implement the left and right rotation.
