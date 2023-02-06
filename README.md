@@ -59,4 +59,4 @@ Entity declaration represents the external interface to the design entity. Entit
 
 Thank you for visiting my account. I wish you a good day! :slightly_smiling_face: 
 
-[]: # :slightly_smiling_face:
+<!-- :slightly_smiling_face:
