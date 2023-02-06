@@ -45,11 +45,11 @@ Entity declaration represents the external interface to the design entity. Entit
   
 <p align="center"><b>led_reg <= led_reg(0) & led_reg(7 downto 1);<b></p>
   
-## Simulation Result:
+## Simulation:
   
 | <img src="./Simulation/Simulation Result.PNG"> |
 |:--:| 
-| *Simulation* |
+| *Simulation Result* |
   
 * On pressing btnd the toggle switches pattern load into the LED’s by the mean of led_reg register.
 * Btnl the light moves towards the left (LSB to MSB).
