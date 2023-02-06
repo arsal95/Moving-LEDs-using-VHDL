@@ -50,3 +50,11 @@ Entity declaration represents the external interface to the design entity. Entit
 | <img src="./Simulation/Simulation Result.PNG"> |
 |:--:| 
 | *Simulation* |
+  
+*On pressing btnd the toggle switches pattern load into the LED’s by the mean of led_reg register.
+* Btnl the light moves towards the left (LSB to MSB).
+* Similarly in the case of btnr the light move towards the right (MSB to LSB).
+* Btnc stops the rotation action.
+* R_pulse signal is used to define the speed of the rotation in this case on every 3 third rising edge of clock r-pulse value is HIGH, means LEDs move their position on every third rising edge of clock.
+
+Thank you for visiting my account. I wish you a good day! :)
