@@ -25,7 +25,7 @@ Entity declaration represents the external interface to the design entity. Entit
 **System Output:**
 * leds - 8 leds [will be a std_logic_vector (7 downto 0)]
 
-## Architecture:
+### Architecture:
 * Architecture is a description of the inner design operation.
 * The Architecture “Behavioral” is assigned to the entity “movelight” using the keyword “of”, such that the port definitions are visible to the architecture.
 * Constant named “Max_count” is defined and assigned a value of 3 ”, sub_type of integer named “Count_type” is defined and assigned a range of “0 to Max_count-1”.
