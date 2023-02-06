@@ -51,7 +51,7 @@ Entity declaration represents the external interface to the design entity. Entit
 |:--:| 
 | *Simulation* |
   
-*On pressing btnd the toggle switches pattern load into the LED’s by the mean of led_reg register.
+* On pressing btnd the toggle switches pattern load into the LED’s by the mean of led_reg register.
 * Btnl the light moves towards the left (LSB to MSB).
 * Similarly in the case of btnr the light move towards the right (MSB to LSB).
 * Btnc stops the rotation action.
