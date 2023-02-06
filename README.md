@@ -57,4 +57,4 @@ Entity declaration represents the external interface to the design entity. Entit
 * Btnc stops the rotation action.
 * R_pulse signal is used to define the speed of the rotation in this case on every 3 third rising edge of clock r-pulse value is HIGH, means LEDs move their position on every third rising edge of clock.
 
-Thank you for visiting my account. I wish you a good day! :)
+Thank you for visiting my account. I wish you a good day! :relaxed:
